@@ -106,8 +106,6 @@ function deleteUser(){
 
 //Send Message 
 
-
-
 function messageFunc(){
     if(!inSystem){
         alert('Only authorized users can send message');
@@ -128,10 +126,6 @@ function messageFunc(){
 
     sendUser.sendMessages.push({id:id,title:message,to:user1});
     user.getMessages.push({id:id,title:message,from:inSystem});
-
-    
-
-
     console.log(db);
 }
 
@@ -144,10 +138,17 @@ function deleteMessage() {
     }
     let messageId = +prompt('Enter id of deleting message');
     let user = getUserObj(inSystem);
-    const sentMessageIndex = user.sendMessages.findIndex(message => message.id === messageId);
+    let sentMessageIndex = user.sendMessages.findIndex(message => message.id === messageId);
     if (sentMessageIndex !== -1){
       user.sendMessages.splice(sentMessageIndex, 1);
       console.log('Sent message deleted');
+      console.log(db);
+      return;
+    }
+    const getMessageIndex = user.getMessages.findIndex(message => message.id === messageId);
+    if (getMessageIndex !== -1){
+      user.getMessages.splice(getMessageIndex, 1);
+      console.log('Get Message deleted');
       console.log(db);
       return;
     }
