@@ -1,0 +1,51 @@
+body{
+    background-image: url('https://www.weliahealth.org/wp-content/uploads/2022/08/blog-wellness-letters-aug-2022.png');
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btns{
+    height: 700px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.registr-Button{
+    width: 100px;
+    height: 30px;
+    color: aliceblue;
+    background-color: rgba(218, 107, 228, 0.448);
+    font-size: large;
+}
+.login-Button{
+    width: 100px;
+    height: 30px;
+    color: aliceblue;
+    background-color: rgba(218, 107, 228, 0.448);
+    font-size: large;
+}
+.delete-Accaunt-Button{
+    width: 100px;
+    height: 30px;
+    color: aliceblue;
+    background-color: rgba(218, 107, 228, 0.448);
+    font-size: small;
+}
+.send-Mesage{
+    width: 100px;
+    height: 30px;
+    color: aliceblue;
+    background-color: rgba(218, 107, 228, 0.448);
+    font-size: small;
+}
+.delete-Messages-Button{
+    width: 100px;
+    height: 40px;
+    color: aliceblue;
+    background-color: rgba(218, 107, 228, 0.448);
+    font-size: small;
+}
+
