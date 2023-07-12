@@ -129,7 +129,6 @@ function messageFunc(){
     console.log(db);
 }
 
-
 //Я не смог додуматься как реализовать код в которым и получатель и отправитель может удалять сделал только это
 function deleteMessage() {
     if (!inSystem) {
@@ -153,3 +152,4 @@ function deleteMessage() {
       return;
     }
 }
+
